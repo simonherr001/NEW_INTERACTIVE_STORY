@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>An Interactive Story</title>
+    <iframe style="display: none;" width="560" height="315" src="https://www.youtuberepeater.com/watch?v=wx2SmvQ8dtM&name=Catching+a+Vibe+lofi+hiphop+mix#gsc.tab=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+
+    <div id="intro" class="MORE">
+        <h1>The Abandoned Warrior </h1>
+        <h3>By: Simon Herr  </h3>
+</div>
+<div class="picture">
+        
+        <img src="https://media2.giphy.com/media/7pvZUShTSu7W8/source.gif" alt="">
+        <img src="https://i.ya-webdesign.com/images/sleepy-drawing-cute-sleeping-cat-5.gif" alt="">
+    </div>
+<div class="WARP">
+        <h2>How It Happend :D Enjoy My Weird Story</h2>
+        <p>There was a new born baby and his name was Yashiro. Yashiro was one years old and during this time his family was running away from dangerous samurai. His family ran as fast as they could and found an abandoned house and hid in it. But it didn't take long for the samurai to find out where they were. The samurai then burned down the house. His family escaped the fire but Yashiro did not. He was left behind because there was to much that was happening. Then once the house was burned down the leader of the samurai, Donabe found him covered with the ashes of the house.   </p>
+    
+    <h2>Then The Journey Of Yashiro Begins</h2>
+    <div id="story">
+
+    </div>
+
+    <div id="buttons">
+
+    </div>
+    
+    <script>
+    
+        let storyContainer = document.getElementById("story");
+    
+        let buttonContainer = document.getElementById("buttons");
+        let history = ["intro"];
+        const story = {
+            intro : {
+                text : "Donabe finds Yashiro covered with the ashes of the house. Donabe was impressed that yashiro was not crying the whole time and saw that he had potential. But also had other ideas in mind. Donabe could do anything he wanted because there was no man or woman to stand up against him. That was why he was chosen as the leader of the samurai. Donabe can be an evil, loving, or a scary person. That gives him the decisions of bad intentions, leave to die, and raise Yashiro as his son.",
+                choices : [
+                    ["Bad Intentions", "Evil"],
+                    ["Leave To Die", "NoMercy"],
+                    ["Raise Him Like His Own Son", "Love"]          
+                ]
+            },
+            Evil : {
+                text : "15 years later, instead of raising Yashiro as his own son or leaving him to die, Donabe raises him as a slave. Yashiro becomes a slave to Donabe and the other samurai. When Donabe demands something Yashiro must do it without any hesitation. No matter what Yashiro must obey. If Yashiro does something wrong or does not obey we will be punished for his actions. When Donabe and the samurai control Yashiro he has no hope. He feels like there is no purpose to his life and obeys them no matter what they say to do. But during those 15 years of abuse from Donabe and the samurai, someone or something was watching him. It's name is Sun Wukong. Sun Wukong comes from from the shadows and says,'This is not where you belong, I will help get your revenge or we can leave this place to find your real family. It is up to Yashiro to choose to give in and stay as a slave or rebell.",
+                choices : [
+                    ["Hopeless", "Hl"],
+                    ["Hope", "He"]
+                ]
+            },
+            Hl : {
+                text : "Yashiro denies Sun Wukong's request and forever stays as a slave for Donabe and the samurai. He has no hope that he will be successful at going against Donabe and the samurai. The longer that he stays there, he grows weaker and weaker everyday. When he realizes that there was hope for him there isn't enough time for him to rebell because he is almost dead. He was skinny and couldn't hold his own against others. Later he then died from starvation.",
+                choices : [
+                    ["Oof Lost The Game Restart ,From Beginning", "intro"]
+                ]
+            },
+            He : {
+                text : "Sun Wukong takes in Yashiro. He feeds him so that he has some meat in his body. Then Sun Wukong trains him strictly, everything has to be perfect or he will not survive in this world of cruelty. He becomes a swordsman, but he is not the best. He is strong enough to make his own decision now, and has the will to live and fight for himself. But he didn't forget the choices that Sun Wukong gave, which was revenge or family.",
+                choices : [
+                    ["Revenge", "Rev"],
+                    ["Family", "Fam"]
+                ]
+            },
+            Rev : {
+                text : "Yashiro is strong enough to defeat samurai because Sun Wukong's training is effective. Yashrio kept all his anger inside of him not releasing any of it and continues to train. He trains non stop, thinking of his revenge over and over. He trains as much as he can until the day comes for the battle between him and the samurai. The day has come for them to confront the samurai and Donabe. Yashiro is filled with rage and anger. He doesn't know whether to go in head on or make a plan first.",
+                choices : [
+                    ["Go In Mindlessly", "Rage"],
+                    ["Make A Plan To Defeat Donabe And The Samurai", "Plan"]
+                ]
+            },
+            Rage : {
+                text : "Yashiro is filled with rage and goes in mindlessly. No matter how many samurai there are Ysahiro does not care. He charges straight for Donabe because that was where most of his bad memories were at. Right now revenge is key for Yashiro. But Yashiro does get himself killed due to the lack of knowledge.",
+            },
+            Fam : {
+                text : "Sun Wukong trained Yashiro strong enough for him to forget about Donabe and the samurai. Yashiro thinks them as low lives. Sun Wukong goes and tells Yashiro about his real family and that his family was called the hatake clan. Then he sets on his journey to find them. He comes across a village and in this village there was already a band of samurai in it. It didn't take long for Yashiro to find them. But they were mugging a guy with a sign of the Hatake Clan and things were getting intense.",
+                choices : [
+                    ["Help The Dude", "Welp"],
+                    ["Leave Him And Continue", "NoHelp"]
+                ]
+            },
+            Plan : {
+                text : "Although Yahiro did make a plan he was still filled with rage and his main target was Donabe. Even though Yashiro took Donabe out Yashiro was taken out himself because he was outnumbered due to being new to the art of combat.",
+            },
+            Welp : {
+                text : "Yashiro decides to not help out the rogue and try to figure out how to get out of this place. But the rogue does notice the tag on the back of Yashiro's shirt. Then all of a sudden prisoners come out of nowhere charging at Yashiro. Then the rogue charges also but attacks the prisoners. Then the two fight on together. Then all of a sudden the rest of the rogues come out of nowhere. They were all wearing hoods. When they took off their hoods they all had white hair just like his. Then the leader of their group explained why the rogue were formed. They were here to rebel against the head of the Hatake CLan for they gathered kids with white hair. The leader said that it seems that they are looking for someone. The leader also said that once they knew it wasn't that person they were also turned as slaves, and they all dis obeyed so they were sent to this prison. The leader asked Yashiro if he would help them.",
+                choices :[
+                    ["Continue On","Continue"]
+                ]
+            },
+            Continue : {
+                text : "When Yashiro gets there, it looked like a huge temple. There were so many royal guards and didn't know what to do. He didn't know whether to just go up to them and face the or just sneak around them.",
+                choices : [
+                    ["Head On", "Caught"],
+                    ["Sneaky", "Caught"]
+                ]
+            },
+            Caught : {
+                text : "Even if Yashiro get sneaks around or goes on head on he gets caught either way. These types of guards show no mercy. When the guards confront Yashiro they catch him and knock him out. When Yashiro wakes up it seems like a court yard filled with prisoners. But he also notices that this is the temple. Yashiro looks around and sees one of the rogues that the boy from the village was talking about, but there were prisoners around that rogue throwing punches. The rogue didn't get hurt once and dodged all the attacks, but she was out numbered.",
+                choices : [
+                    ["Help The Rogue", "HelpRogue"],
+                    ["Leave", "DisHelp"]
+                ]
+            },
+            HelpRogue : {
+                text : "Yashiro goes straight for the prisoners. The rogue and Yashiro fight together taking out all the hostile prisoners. Then the rogue notices the tag on his back that Yashiro never knew about. That rogue eventually decides to help out Yashiro with what he needs help with. Then the rest of the rogues came out of nowhere. They were all wearing hoods. When they took off their hoods they all had white hair just like his. Then the leader of their group explained why the rogue were formed. They were here to rebel against the head of the Hatake CLan for they gathered kids with white hair. The leader said that it seems that they are looking for someone. The leader also said that once they knew it wasn't that person they were also turned as slaves, and they all dis obeyed so they were sent to this prison. The leader asked Yashiro if he would help us.",
+                choices : [
+                    ["Help Out This Group", "HelpOutDeseRogues"],
+                    ["For Get About It", "ContinueStoryLine"]
+                ]
+            },
+            NoHelp : {
+                text : "Yashiro eventually comes across the housing of the Hatake Clan. He notices that this is a temple that is covered with guards. With all these guards he doesn't know whether to go in head on or be sneaky.",
+                choices : [
+                    ["Head On", "Caught"],
+                    ["Sneaky", "Caught"]
+                ]
+            },
+            DisHelp : {
+                text : "Yashiro decides to not help out the rogue and try to figure out how to get our of this place. But the rogue does notice the tag on the back of Yashiro's shirt. Then all of a sudden prsioners come out of no where charging at Yashiro. Then the rogue charges also but attacks the prisoners. Then the two fight on together. Then all of a sudden the rest of the rogues come out of no where. They were all wearing hoods. When they took off their hoods they all had white hair just like his. Then the leader of their group explained why the rogue were formed. They were here to rebell against the head of the Hatake CLan for they gathered kids with white hair. The leader said that it seems that they are looking for someone. The leader also said that once they knew it wasn't that person they were also turned as slaves, and they all dis obeyed so they were sent this prison. The leader asked Yashiro if he would help them.",
+                choices : [
+                    ["Help Out This Group", "HelpOutDeseRogues"],
+                    ["For Get About It", "ContinueStoryLine"]
+                ]
+            },
+            HelpOutDeseRogues : {
+                text : "Yashiro decides to join their force and plan to go against the head or leaders of the Hatake Clan. Once they are done planning they commence the plan. Then there comes to the point where Yashiro and the leaders of the Hatake Clan which are his parents confront each other. Yashiro has hate for his parents knowing that they abandoned him. But he also loves them for trying to find him all this time. But his parents didn't know that he was Yashiro and struck at him. Yashiro has no choice but to defend himself and in the process he killed both of his parents. Yashiro saw the spirits of his parents come out of their bodies and say that they finally found their son and are happy to know that he is doing well and healthy. With that Yashiro forgives them for abandoning him and knowing that they still cared for him. Then the spirits of the parents now pass on peacefully knowing that they have been forgiven by their own son.",
+                choices : [
+                    ["Ending", "Ending"]
+                ]
+            },
+            Ending : {
+                text : "In the end Yashiro found out who his real parents are and he knows that they love him ever since birth. With everyone knowing that Yashiro was the son of the leaders of the Hatake Clan he then ruled over the temple and made it a better place for everyone. He also found true love and had a baby that looked just like him. But then The temple was over ran by samurai and they had to run away. In the process of running away they forgot to get the baby from the crib. Then the story repeats itself once again.",
+
+            },
+            ContinueStoryLine : {
+                text : "Yashiro says no to the leader of the rogues. This is because he knows exactly who they are looking for. Yashiros tries his best to get into the temple but he can't. He tries so many times that the guards are so fed up and end up locking him up in a cell. They torture him over and over and say that he has sinned. But Yashiro keeps on fighting back and stay alive. Yashiro is at the brink of death and finally gives in. But his parents come and visit. Then Yashiro sees hope again. His parents take him in and care for him. They nursed him as much as they could. They did everything that a loving family would do for their son. His parents knew that Yashiro was their son which is why they took care of him. Once Yashiro feels all better it is just him and his parents in one room. They talk each other saying that they waited so long to find each other. Yashiro and his parents get along and all is forgiven because he knows that they love him now. But then the leader of the rogues came and assassinated both of Yashiro parents. Yashiro saw his parents spirits come out of their bodies and fade away peacefully and Yashiro is happy to know that they died peacefully but then gets angry. Yashiro then fights the leader of the rogues but he then escapes. Later on Yashiro builds his own army and trains them to become fierce warriors. Once that is done he sends them all off to find the rogues of the Hatake Clan. But the rogue were easily found. Their numbers grew enormously. They fought and fought for many years. The Hatake Clan and the rogues were known as the strongest armies in Japan. These two group were feared and more joined them fighting each other endlessly. The war between these two groups went on forever not knowing when the war has ended.",
+            }, // This Is Where The Whole First Story Is AT, When Donabe Takes Him In As A Slave.
+            NoMercy : {
+                text : "Donabe has no feelings for this child at the time. He then leave his behind and continues to find his parents. Two days have passed there was only the noise of a baby crying in the middle of the forest. Then something came to Yashiro and took him. This thing that took considered him as food. But then he noticed is white hair and the sent of the samurai's. The thing that took Yashiro was a monkey called Sun Wukong. He has human like features and looks like a monkey. He understood the art of combat and knows exactly who his parents are because he has the same sent as them. He also knows that the band of samurai led by Donabe was chasing them. So what he did was take him as one of his own. For 15 years Sun Wukong has trained to become a fine warrior, maybe of the strongest. Yashiro was more like an animal than human. He fought against demons and beasts twice his size giving him experience in combat. Yashiro knew that Sun Wukong was not his father and questioned him. He told Yashiro exactly what happened when he was a baby and Sun Wukong gives him the option of revenge or to find his family.",
+                choices : [
+                    ["Revenge On Band Of Samurai", "SamuraiRevengeNoMercy"],
+                    ["Find His Family", "FamilyNoMercy"]
+                ]
+            },
+            SamuraiRevengeNoMercy : {
+                text : "Yashiro is furious and chooses revenge. He doesn't stop thinking about revenge. He has been under war ever since he was a baby and has blood lust. Knowing that the samurai was the problem, that he never met his real parents makes his turn into a demon. He wants revenge so badly and goes on a rampage. But Sun Wukong stops him with his staff. Yashiro his mindless at thte moment and attacks Sun Wukong. Once he see that Sun Wukong is injured he stops and realises what he has done. Yashiro does his best to aid his injuries and once he got better, Yashiro was told not to leave his sight and Yashiro promises. Later on Yashiro starts to think of revenge once again. He packs all the stuff he need for this journey but hesitates. He think of the promise that he made. ",
+                choices : [
+                    ["Leave And Go For Revenge", "LeaveNoMercy"],
+                    ["Stay And Wait For Command", "WaitNoMercy"]
+                ]
+            },
+            LeaveNoMercy : {
+                text : "Yashiro does not care about Sun Wukong no longer. He leaves him and goes to this band of samurai. He goes across many challenges and finds out how to control his demon rage. He uses it many times when he comes across a foe.  Then Eventually he get to the band of samurai's hide out. He sets out for many days. Hesitating on if he should in or make a plan. But in the end his he wants revenge so badly. At the same time this does not seem right to him. He regrets coming and thinks about leaving.",
+                choices : [
+                    ["Who Cares Lets Just Attack", "AttackNoMercy"],
+                    ["Lets Walk Away And Forget About This", "AttackNoMercy"]
+                ]
+            },
+            AttackNoMercy : {
+                text : "No matter what Yashiro's rage comes back and he goes head on into the hide out and starts attacking everyone in sight no matter who it is. He just wants to see one person gone. He attacks and attacks endlessly turning him into the demon that is balled up inside of him. His demon form comes out and his attacks are quicker. But then he finds Donane and does not know whether to strike.",
+                choices : [
+                    ["Strike", "StrikeNoMercy"],
+                    ["Mercy", "StrikeNoMercy"]
+                ]
+            },
+            StrikeNoMercy : {
+                text : " Whether it was a strike or not Yashiro was seen in his demon form. His demon form is unforgettable. Yashiro then realizes that he cannot change back to his normal form and his stuck in his demon form. He runs away as fast as he can. The samurai that were still alive knows how Yashiro looks like. They get everyone that they know and search for him. Some time has past and now every one in Japan knows that there is a monster lurking around some where. Yashiro was being hunted down by so many samurai. The samurai joined forces and tried to find him. When they did find Yashiro, he ran away as fast as he could. Then one day he could run any longer, or didn't want to anymore at least. All of the smaurai trapped Yashiro at the edge of a cliff. Yashiro was scared of what was happening to him. Then many samurai cane charging at him. Yashiro struck at them as if they were fly and he realized that he was stronger than them. Yashiro fights off all the samurai that was there. But there were more that came to their aid. They faught and faught but in the end Ysahiro was caught. But once he was caught the samurai didn't know what to do with him because after fighting Yashiro all the samurai were tired. So what they did was just push him off the cliff, and to the samurai this was a sucess for them. Yashiro hatred for this world was spread on to the other animals of the forest and many became beasts.",
+
+            },//This Was All if he did not wait for Sun Wukong.
+            WaitNoMercy : {
+                text : "Yashiro and Sun Wukong move on to the hide out of the samurai. Sun Wukong knows that there is something that is hiding inside of Yashiro, sort of like a beast. Sun Wukong can see it in Yashiro's eyes. When they get there Yashiro is ready for combat, he heads straight in but Sun Wukong stops him. Sun Wukong says that they have to make a plan first before they can go into their village.",
+                choices : [
+                    ["Plan First", "Combat"],
+                    ["Just Go On", "Combat"]
+                ]
+            },
+            Combat : {
+                text : "Plan or no plan Yashirio went head on taking our everyone that he saw. Yashiro had no human inside of  him now and is now just a demon in a human body. Sun Wukong was then knocked out when he was focused on Yashiro. When Sun Wukong woke up it seemed that no one was there except Yashiro. Yashiro was consumed with evil and Sun Wukong had to do something about it. But Yashiro was walking was so angry and didn't know what to do. ",
+                choices : [
+                    ["Walk Away", "Run"],
+                    ["Attack Sun Wukong", "Run"]
+                ]    
+            },
+            Run : {
+                text : "No matter what Sun Wukong saw Yashiro as something else and knocked him out. Sun Wukong then chained up Yashiro because he could not control his emotions anymore. For the rest of his life he will stay chained some where no one knows. He will stay there for the rest of his life. Sun Wukong will take care of his byt still has to becarful because half of him is not him."
+            },
+            FamilyNoMercy : {
+                text : "Yashiro and Sun Wukong traveled to a temple. It was full of guards patrolling around. They both observed the temple. They found all the openings and blind spots. Yashiro and Sun Wukong made plans to infiltrate the temple. But then Yashiro saw is parents. Yashiro was so glad to see them and just wanted to go in and talk to them but then he remembered this place is not kind to strangers. He knew that it was not safe but could not wait to talk to them.",
+                choices : [
+                    ["Just Go Without A Care", "Screwed"],
+                    [" Just Wait And See What Hapens", "Screwed"]
+                ]
+            },
+            Screwed : {
+                text : "Yashiro was caught by the guards either way because he could not wait to see his parents. But that's not what happens when he was caught by the guards. The guards tortured Yashiro and interrogated him. But all Yashiro did was beg to see his parents the whole time. He could not take it anymore and went berserk. He was filled with rage attacking everything around. Sun Wukong could not do anything because there were so many people around and he would be outnumbered. Yashiro attacked so many guards but not enough. Yashiro could not tell what was happening because something was controlling him. Yashiro's appearance changed into something else like a huge black bear. Yashiro eventually got into a courtyard that was full of people and attacked them. But the guards got there in time to finish off Yashiro. Yashiro died. He became a dark spirit soon after his death because his life was not lived at the fullest and was then forgotten and disappeared.",
+
+            },// This was an ending for Yashiro for decision number 2
+            Love : {
+                text : "Donabe takes in Yashiro as his own son and loves Yashiro with all his heart. He treats him with respect and love and trains him to become a strong and honorable samurai. While raising Yashiro Donabe's ways have changed. He no longer is a samurai that was money and power but now he is a samurai that is was to protect and love. Yashiro grow to an age of 16. Yashiro and Donabe were both sent to go fight a war that was not for them to fight. The war between samurai did happen though and now the size of Donabe's samurai group has decreased. The war was won but Donabe could not be found by Yashiro. Yashiro looked for Donabe over and over and he did. He was injured and didn't have long to live. Donabe was told about his real family and said that he loves him and has the choice to go look for them or become the new leader.",
+                choices : [
+                    ["Become The Leader", "Leader"],
+                    ["Search For His Family", "Search"]
+                ]
+            },
+            Leader : {
+                text : "Yashiro becomes the new leader of the samurai group. He did not know what to do as a leader. But then the other samurai told him everything that he needed to know. Years later Yashiro is feared by many people because he is fierce and all he wants is power and money. He sees that as his only purpose. But after a war that he fought which was his last war he was injured. He was no longer feared by anyone and later disappeared out of nowhere. Everyone that has fought for and with him no longer know who Yashiro is now.",
+            },
+            Search : {
+                text : " After Donabe's death Yashiro then went to go look for his family. Donabe told him exactly where they are at and Yashiro went there. Yashiro was weak because he had just fought a war. He traveled miles and miles for days and days. Walking the whole time non stop looking for this temple. One day he comes across a place that looked like a temple to him and he tried his best to walk there but he could not anymore. He ran out of energy due to starvation. He fell being unconscious and seeing two people who had to be his parents. Then more days have passed and he wakes up in a fancy room. Two people walked in. They asked where Yashiro was from and Yashiro told them his whole story trusting in these two strangers that he never met. The two strangers said they lost their son due to a fire and he looked just like Yashiro. Yashiro spent all of his time there with those two strangers until he got better. Then when he did get better he was kicked out. Now he did think that they were his actual parents but did not know if he should go back.",
+                choices : [
+                    ["Go Back For Them", "GoBack"],
+                    ["Leave And Go Back To Become A Leader", "Leader"]
+                ]
+            },
+            GoBack : {
+                text : "Yashiro goes back to and begs the guards to let them back inside. But the guards reject every time. Yashiro tries getting in every way possible that he can. Then all of a sudden his parents come out and say they knew Yashiro was their son. They all hug each other and start crying. Then when Yashiro becomes an adult he is married and has one kid. The mother left them and it was only Yashiro and the son. Yashiro spent all his years taking care of his son and training him to become a strong warrior just like him. Then when Yashiro was on his death bed he tells his son about his mother. Then Yashiro dies and his son has so many challenges to face. The new story of a warrior begins.",
+            }
+
+        }
+        function makeButton(btnText, choice){
+            let button = document.createElement("button");
+            button.innerHTML = btnText;
+            buttonContainer.appendChild(button);
+            button.addEventListener ("click", function() {
+                history.push(choice);
+                storyShow();
+            });
+        }
+        function storyBuild(text) {
+            let storyItem = document.createElement("p");
+            storyItem.innerText = text;
+            storyContainer.appendChild(storyItem);
+        }
+        function storyShow(){
+            let currentPage = history[history.length - 1]; // set currentPage of the array history to last index
+            storyContainer.innerHTML = ""; // resets HTML  // basically these two reset them. 
+            buttonContainer.innerHTML = ""; // resets the buttons
+            
+            for(let page of history){ // This build the story text from the items in the histry array
+                storyBuild(story[page].text);
+            }
+            
+            for(let choice of story[currentPage].choices){ //Builds buttons from the choices of the most recent story change
+                makeButton(choice[0], choice[1])
+            }
+        }
+        storyShow();
+        
+        
+    </script>
+</div>
+</body>

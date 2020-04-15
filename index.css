@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&family=Lobster+Two:ital@1&family=Merienda&display=swap');
+body{
+    background-image: url(https://images.unsplash.com/photo-1466051764869-02218eeb1fa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80);
+}
+
+.picture{
+    margin: 1%;
+    text-align: center;
+}
+
+.MORE{
+    border: 2px solid white;
+    margin: 1%;
+    width: 48%;
+    background-color: rgba(128, 128, 128, 0.678);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+    text-shadow: 5px 5px 5px black;
+    background-image: url(https://i.ya-webdesign.com/images/cherry-blossom-gif-png-7.gif);
+}
+
+p{
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 150%;
+    text-shadow: 3px 3px 3px black;
+    background-image: url(https://gifimage.net/wp-content/uploads/2017/10/cherry-blossom-petals-gif-2.gif);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 200%;
+    text-shadow: 3px 3px 3px black;
+}
+
+h3{
+    color: white;
+}
+
+.WARP{
+    border: 2px solid white;
+    width: 63%;
+    background-color:rgba(128, 128, 128, 0.678) ;
+    margin: 1%;
+}
+button{
+    font-size: 100%;
+    font-family: 'Merienda', cursive;
+    text-shadow: 3px 3px 3px white;
+    background-color: gray;
+}
